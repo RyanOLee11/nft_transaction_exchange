@@ -1,5 +1,5 @@
 import './App.css';
-import {Footer, Loader, NavBar, Services, Transactions, Welcome} from './Components';
+import {Footer, NavBar, Services, Transactions, Welcome} from './Components';
 
 function App() {
   return (
@@ -13,9 +13,6 @@ function App() {
       <Services/>
       <Transactions/>
       <Footer/>
-      <h1 className="text-3xl font-bold underline">
-    Hello world!
-  </h1>
     </div>
   );
 }
