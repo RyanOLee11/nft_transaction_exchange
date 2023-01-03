@@ -4,7 +4,7 @@ import {Footer, NavBar, Services, Transactions, Welcome} from './Components';
 function App() {
   return (
     <div>
-      <div className='min-h-screen'>
+      <div className=''>
         <div className='gradient-bg-welcome'>
           <NavBar/>
           <Welcome/>
