@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/RyanOLee11/nft_transaction_exchange/static/css/main.4e53dbcd.css",
-    "main.js": "/RyanOLee11/nft_transaction_exchange/static/js/main.f5dbd684.js",
+    "main.js": "/RyanOLee11/nft_transaction_exchange/static/js/main.f24fd97e.js",
     "static/js/787.1087d3ae.chunk.js": "/RyanOLee11/nft_transaction_exchange/static/js/787.1087d3ae.chunk.js",
     "index.html": "/RyanOLee11/nft_transaction_exchange/index.html",
     "main.4e53dbcd.css.map": "/RyanOLee11/nft_transaction_exchange/static/css/main.4e53dbcd.css.map",
-    "main.f5dbd684.js.map": "/RyanOLee11/nft_transaction_exchange/static/js/main.f5dbd684.js.map",
+    "main.f24fd97e.js.map": "/RyanOLee11/nft_transaction_exchange/static/js/main.f24fd97e.js.map",
     "787.1087d3ae.chunk.js.map": "/RyanOLee11/nft_transaction_exchange/static/js/787.1087d3ae.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4e53dbcd.css",
-    "static/js/main.f5dbd684.js"
+    "static/js/main.f24fd97e.js"
   ]
 }
