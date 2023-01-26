@@ -82,9 +82,10 @@ export const TransactionsProvider = ({ children }) => {
 
   const checkIfTransactionsExists = async () => {
     console.log('checkIfTransactionsExists');
+    const accounts = await ethereum.request({ method: "eth_accounts" });
     try {
       console.log('in try');
-      if (ethereum) {
+      if (ethereum && accounts.length) {
         console.log('in if');
         const transactionsContract = createEthereumContract();
         console.log('after transactionsContract');

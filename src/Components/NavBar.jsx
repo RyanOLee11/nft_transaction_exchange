@@ -22,7 +22,7 @@ const NavBar = () => {
                 <img src={Logo} alt="logo" className="w-32 cursor-pointer"/>
             </div>
             <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
-                {["Market", "Excahnge", "Tutorials", "Wallets"].map((item, index) => (<NavBarItem key={item + index} title={item}  />))}
+                {["Market", "Exchange", "Tutorials", "Wallets"].map((item, index) => (<NavBarItem key={item + index} title={item}  />))}
                 <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
                     Login
                 </li>
@@ -36,7 +36,7 @@ const NavBar = () => {
                     <li className="text-xl w-full my-2">
                         <AiOutlineClose onClick={() => {setToggleMenu(false)}} />
                     </li>
-                    {["Market", "Excahnge", "Tutorials", "Wallets"].map((item, index) => (<NavBarItem key={item + index} title={item} classProps="my-2 text-lg"/>))}
+                    {["Market", "Exchange", "Tutorials", "Wallets"].map((item, index) => (<NavBarItem key={item + index} title={item} classProps="my-2 text-lg"/>))}
                 </ul>}
             </div>
         </div>
