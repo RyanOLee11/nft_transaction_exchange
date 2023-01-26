@@ -8,9 +8,13 @@ export const TransactionContext = React.createContext();
 const { ethereum } = window;
 
 const createEthereumContract = () => {
+  console.log('in create contract');
   const provider = new ethers.providers.Web3Provider(ethereum);
+  console.log('after provider');
   const signer = provider.getSigner();
+  console.log('after signer');
   const transactionsContract = new ethers.Contract(contractAddress, contractABI, signer);
+  console.log('after transactionContract');
 
   return transactionsContract;
 };
@@ -28,8 +32,13 @@ export const TransactionsProvider = ({ children }) => {
 
   const getAllTransactions = async () => {
     try {
+      console.log('in getAllTransactions');
       if (ethereum) {
+        console.log('in if');
         const transactionsContract = createEthereumContract();
+        console.log('after transactionsContract');
+
+        console.log(transactionCount);
 
         const availableTransactions = await transactionsContract.getAllTransactions();
 
