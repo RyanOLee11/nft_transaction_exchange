@@ -81,10 +81,16 @@ export const TransactionsProvider = ({ children }) => {
   };
 
   const checkIfTransactionsExists = async () => {
+    console.log('checkIfTransactionsExists');
     try {
+      console.log('in try');
       if (ethereum) {
+        console.log('in if');
         const transactionsContract = createEthereumContract();
+        console.log('after transactionsContract');
+        console.log(transactionsContract);
         const currentTransactionCount = await transactionsContract.getTransactionCount();
+        console.log('after currentTransactionCount');
 
         window.localStorage.setItem("transactionCount", currentTransactionCount);
       }
